@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: right
+}
+
+li a:hover:not(.active) {
+  background-color: none;
+  color: #1abc9c
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], [type=email], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #1abc9c;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+</style>
+</head>
+<body>
+
+  <ul>
+    <li style = "float: left"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/index.html">NICOLE MASSAGE + YOGA</a></li>
+    <li style = "float: right"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/Bookings.html">BOOKINGS</a></li>
+    <li style = "float: right"> <a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/about.html">ABOUT</a></li>
+    <li style = "float: right"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href= "http://web.engr.oregonstate.edu/~craftb/calendar.html">CALENDAR</a></li>
+    <li style = "float: right"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/yoga.html">YOGA</a></li>
+    <li style = "float: right"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/massage.html">MASSAGE</a></li>
+    
+  </ul>
+
+
+<div style="padding:20px;margin-top:40px;background-color:white;height:200px;">
+  <div style="padding:0px;margin-left:30px;margin-bottom:0;background-color:white;height:10px;">
+
+ <p style="text-align:center; font-size: 35px; color: #333333">Awareness. Release. Movement.</p>
+  
+ <br><p style = "margin-left: 250px; margin-right: 250px; color: #333333; text-align: center">Nicole Massage and Yoga offers massage, assisted stretching, breath work and yoga. Blending the best of these different techniques helps to maximize the potency of each session or class you take. Book a session with us using the online form below for private bookings for massage, yoga or both.</p><br><br><br>
+  </div></div>
+  
+
+<div class="column" style="background-color:white; margin-bottom: 125px; margin-top:100px"><cite><img src ="https://i.pinimg.com/originals/bd/f3/af/bdf3af3fc04d324290cbe2796cc068b0.jpg" alt = "studio" style = "height:85%; width: 85%; margin-left: 70px;"></cite>
+  </div>
+
+
+<h5 style = " color: #1abc9c; margin-left: 15px;">We'd love to hear from you! Fill out the form below or email us at craftb@oregonstate.edu</h5>
+
+    
+
+<div class="container">
+  <form action=" http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method = "get">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25"><br>
+        <label for="service">Service</label><br>
+      </div>
+      <div class="col-75">
+        <br>
+        <input type="radio" name="service" value="massage"> Massage
+        <input type="radio" name="service" value="yoga"> Yoga<br><br>
+
+      </div>
+    </div>
+
+        
+    <div class="row">
+      <div class="col-25">
+      <label for="day">Day</label>
+    </div>
+      <div class="col-75">
+        <select id="day" name="day">
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+      <label for="day">Session Time</label>
+    </div>
+    <div class="col-75">
+    <select id="day" name="day">
+      <option value="first">1PM - 2PM</option>
+      <option value="second">2PM - 3PM</option>
+      <option value="third">3PM - 4PM</option>
+    </select>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label>
+        </label>      
+      </div>
+      <div class="col-75">
+        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+        <br><br>
+      </div>
+    </div>
+   <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</body>
+</html>
+
+   
+   </body>
+   </html>

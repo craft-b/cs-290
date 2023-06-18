@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: right
+}
+
+li a:hover:not(.active) {
+  background-color: none;
+  color: #1abc9c;
+}
+
+
+.main {
+  margin-left: 200px; /* Same width as the sidebar + left position in px */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 110px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 65px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* Container holding the image and the text */
+.image {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 50px;
+  right: 18px;
+  text-align: center;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.05 opacity */
+  color: #f1f1f1;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 94.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.ret-container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.ret-column {
+  float: left;
+  width: 18.3%;
+  margin-bottom: 16px;
+  padding: 10px 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .ret-column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ret-contain {
+  padding: 0 16px;
+}
+
+.ret-contain::after, .ret-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.ret-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.ret-button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+  <ul>
+    <li style = "float: left"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/index.html">NICOLE MASSAGE + YOGA</a></li>
+    <li style = "float: right"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/Bookings.html">BOOKINGS</a></li>
+    <li style = "float: right"> <a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/about.html">ABOUT</a></li>
+    <li style = "float: right"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href= "http://web.engr.oregonstate.edu/~craftb/calendar.html">CALENDAR</a></li>
+    <li style = "float: right"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/yoga.html">YOGA</a></li>
+    <li style = "float: right"><a style = "text-decoration: none; font-family: Times New Roman, Times, serif" href="http://web.engr.oregonstate.edu/~craftb/massage.html">MASSAGE</a></li> 
+  </ul>
+
+    
+<!-- The four columns -->
+<div class="row" style = "margin-top: 40px; margin-bottom: 100px;">
+  <div class="column">
+      <div class = "image">
+        <a href="http://web.engr.oregonstate.edu/~craftb/classes.html">
+       <cite><img src="https://shawellnessclinic.com/wp-content/uploads/2018/03/iStock-637776558.jpg" alt="Nature" style="width:300px; height:150px" onclick="myFunction(this);"></a></cite>
+   <div class="text-block">
+      <h4>YOGA</h4>
+    </div>
+      </div>
+</div>
+ <div class="column">
+    <div class = "image">
+        <a href="http://web.engr.oregonstate.edu/~craftb/Retreats.html">
+    <cite><img src="https://www.kamalaya.com/fileadmin/user_upload/WELLNESS-PROGRAMS-THAILAND/yoga-thailand-2000x850/yoga-retreats-thailand-02.jpg" alt="Snow" style="width:300px; height:150px" onclick="myFunction(this);"></a></cite>
+    <div class="text-block">
+    <h4>RETREATS</h4>
+    </div>
+    </div>
+  </div>
+<div class="column">
+    <div class = "image">
+        <a href="http://web.engr.oregonstate.edu/~craftb/Training.html">
+    <cite><img src="http://graphics8.nytimes.com/images/2013/03/27/us/YOGA-1/YOGA-1-superJumbo.jpg" alt="Mountains" style="width:300px; height:150px" onclick="myFunction(this);"></a></cite>
+    <div class="text-block">
+    <h4>TRAININGS</h4>
+    </div>
+</div>
+</div>
+  <div class="column" style = "margin-bottom: 120px;">
+    <div class = "image">
+        <a href="http://web.engr.oregonstate.edu/~craftb/massages.html">
+    <cite><img src="https://fitness.edu.au/workspace/uploads/blog/bigstock-sports-massage-massaging-arm-149071172.jpg" alt="Lights" style="width:300px; height:150px" onclick="myFunction(this);"></a></cite>
+    <div class="text-block">
+    <h4>MASSAGE</h4>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
+  <h1 style = "text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif">UPCOMING SESSIONS</h1>
+<br><br>
+
+<div style="margin-left: 600px">
+  <div class="ret-column">
+    <div class="card">
+     <div class="ret-contain">
+        <p class="title">Learning in progress...  Please check back for updates.</p>
+        <p>
+      </div>
+    </div>
+  </div>  
+  
+
+  
+  
+  <div class="retreat">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+  
+  </body>
+  </html>
